@@ -39,8 +39,22 @@
         <p class="para1">
             As an example, let’s say that you want to create a new Git branch from the master branch named “feature”To achieve that, you will run the “git checkout” command with the “-b” option and add “feature” as the branch name.
         </p>
+        <h1 id='coords'></h1>
+        <hr/>
+        <form action="" id="form">
+            <label>Name</label><br/>
+            <input type="text" name="name" id="name"><br/>
+            <label>Email</label><br/>
+            <input type="email" name="email" id="email"><br/>
+            <label>Gender</label><br/>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br/>
+            <input type="submit" value="Submit">
+        </form>
     </div>
-
+    <!-- Events -->
     <script>
         $(document).ready(function(){
             // $('#btn1').click(function(){
@@ -88,12 +102,42 @@
             //     $('.para1').toggle();
             // })
 
-            $('#btn1').click(function(e){
-                console.log(e.currentTarget.id);
-                console.log(e.currentTarget.innerHTML);
-                console.log(e.currentTarget.outerHTML);
-                console.log(e.currentTarget.className);
-            })
+            // $('#btn1').click(function(e){
+            //     console.log(e.currentTarget.id);
+            //     console.log(e.currentTarget.innerHTML);
+            //     console.log(e.currentTarget.outerHTML);
+            //     console.log(e.currentTarget.className);
+            // })
+
+            // $(document).on('mousemove' , function(e){
+            //     // console.log('Cords: Y: ' + e.clientY 'X: ' + e.clientX);
+            //     $('#coords').html('Cords: Y: ' + e.clientY  + ' X: ' + e.clientX);     
+            // })
+
+            /**** FORMS ****/
+            // $('input').focus(function(){
+            //     // alert('focus');
+            //     $(this).css('background', 'pink');
+            // });
+            // $('input').blur(function(){
+            //     // alert('focus');
+            //     $(this).css('background', 'white');
+            // });
+
+            // $('input').keyup(function(e){
+            //     console.log(e.target.value);
+            // })
+
+            // $('select#gender').change(function(e){
+            //     // alert('Changed');
+            //     console.log(e.target.value);
+            // });
+
+            // $('#form').submit(function(e){
+            //     e.preventDefault();
+            //     var name = $('input#name').val();
+            //     console.log(name);
+            // })
         })
     </script>
 </body>
